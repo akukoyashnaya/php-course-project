@@ -6,8 +6,6 @@ $data = [
     $password=>$_POST['password'],
    ];
 
- //$users = query(sqlBuildSelect('users')); 
-
 if ($login) {
 
  $sql = sqlBuildSelect('users').sqlBuildWhere($data);

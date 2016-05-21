@@ -18,7 +18,6 @@ include 'header.php';
 		<div class="overlay-wrapper col span_1_of_4 gallery-item">
 	    <img src="gallery/<?=$image['img_name']?>">
 	    <div class="overlay">
-	       <!-- <label>Old number</label>-->
 	        <label></label>
 	    </div>
 	</div>

@@ -4,10 +4,6 @@ include 'header.php';
 <div id="index">
 <div id="container">
     <?php
-    //$users = query(sqlBuildSelect('users')); 
-   // session_destroy();
-   // echo is_login().'<br>';
-  //  print_r ($_SESSION);
     ?>
    <div>
    <h2>Dear User!</h2>

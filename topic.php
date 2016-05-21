@@ -10,7 +10,6 @@ include 'header.php';
 //1.2 get the topic from the array $topics
  $topic = $topics[0]['topic']; 
  $id = $topics[0]['id'];
- //pre($topics);
 //2. get the username from the  $topics array ==> from the `users` table 
   $user_id = $topics[0]['user_id']; //from the `topic`
   $sql= sqlBuildSelect('users').sqlBuildWhere(['id'=>$user_id]); //from the `users` 
@@ -87,10 +86,6 @@ include 'header.php';
                 <li><i class="fa fa-pencil"></i>
                     <span><?=$create_time?></span>
                 </li>
-                <!--<li>-->
-                <!--    <i class="fa fa-comments"></i>-->
-                <!--    <span>Comments</span>-->
-                <!--</li>-->
                 <?php if (is_admin()): ?>
                  <li>
                       <a href="delete_post.php?t=<?= $id ?>&f=<?=$_GET['f']?>">Delete Post</a>
@@ -126,7 +121,6 @@ include 'header.php';
             <div class="new-comment">
        <?php if (is_login() && !is_admin()):?>
       
-        <!--<a href='#'>Add a Comment</a>-->
        <h2>Add comment</h2>
         <form action="add_comment.php" method="post">
             <textarea name="content" style="width: 500px; height: 100px;" id="user-<?=$_SESSION['user']?>" >
@@ -150,7 +144,6 @@ include 'header.php';
             <?php    foreach ($comments as $comment):
             $commentator = query("SELECT `login` FROM `users` where `id`='".$comment['user_id']."'");
             $commentator = $commentator[0]['login'];
-            //echo pre($commentator);
             ?>
                 <div class="comment-item">
                     <div class="comment-user">
@@ -177,20 +170,9 @@ include 'header.php';
                     </div>
            
                  <?php endforeach; ?>      
-               
-               
-              
-              
-              
-              
-              
-              
-              
            
             </div>
         </div>
-        
-            
     </div>        
 </div>
 

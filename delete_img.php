@@ -5,9 +5,7 @@ include 'db.php';
 if (isset($_POST['data']))
 {
   $delete_id = $_POST['data'];
-//pre ($delete_id);
   foreach ($delete_id as $id) {
-    //  query($sql='delete from `contacts` where `id`='.$id.'');
      $sql = 'SELECT `img_name` from `gallery` where `id`='.$id.'';
      $filename = query($sql);
      $filename =  $filename[0]['img_name'];

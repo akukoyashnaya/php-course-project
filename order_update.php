@@ -24,7 +24,6 @@ if (isset($_POST['data'])) {
     $a="UPDATE `gallery` SET `img_order`='0' where `id`=$passive_id";
   
     $a=query($a);
-   // $a=$sql;
     
     $b="UPDATE `gallery` SET `img_order`='$current' where `id`=$active_id";
     $b=query($b);
@@ -35,10 +34,6 @@ if (isset($_POST['data'])) {
     $data=['id' => $passive_id, 'img_order' =>$prev ];
     
     echo json_encode($data);
-    
-    
-    
-     
     
 }
 else echo 'nooo';

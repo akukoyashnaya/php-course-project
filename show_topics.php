@@ -5,18 +5,12 @@ include 'header.php';
 //1. get forum name 
  $sql = sqlBuildSelect('forums').sqlBuildWhere(['id' => $forum_id]);
  $forum = query($sql);
- //pre ($forum);
  $forum = $forum[0]['forum'];
- 
-// pre ($forum);
 //1. build and execute a query SELECT * from `topics`
  $sql = sqlBuildSelect('topics').sqlBuildWhere(['forum_id' => $forum_id]); 
  $topics = query($sql);
 
 //2. show topics page 
- 
- 
- 
  
  ?>
 <!doctype html>
@@ -44,8 +38,6 @@ include 'header.php';
 // 3. show all topics as a table strings
   foreach ($topics as $topic) {
 //3. count all comments per topic
-      // $count_topic=query('select count(*) topic_counter from `topics` where forum_id='.$forum['id']);   
-      // $count_topic=$count_topic[0]['topic_counter'];
       $count_comment=query('select count(*) as comment_number from `comments`'.sqlBuildWhere(['topic_id' => $topic['id']]));
        echo '<tr>
                 <td><a href="topic.php?t='.$topic['id'].'&f='.$forum_id.'" class="forum-name">'.$topic['topic'].'</a></td>

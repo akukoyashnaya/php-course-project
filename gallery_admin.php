@@ -4,7 +4,6 @@ include 'header.php';
  $images = query($sql);
  $sql="select count(*) as `counter` from `gallery`";
  $counter = query($sql);
-// pre($images);
 ?>
 
 <script>
@@ -14,12 +13,9 @@ include 'header.php';
      var prev;
      var current;
      
-//     var passive_id=data1.id;
-//     var passive_img_order=data1.img_order;
     
       $(".order").focus(function() {
            console.log('ccc');
-        //  $(this).data('val', $(this).val());
         img_id=$(this).attr('id');
         img_id = img_id.replace('input-','');
         prev = $(this).val();
@@ -68,10 +64,7 @@ include 'header.php';
       myCheckboxes=[];
       callback=jQuery.parseJSON(callback);
       var arr = jQuery.makeArray(callback); 
-    //  console.log(arr);
       var length=arr.length;
-   //   console.log(arr, length);
-     
      
       for (var i=0; i<length; i++){
         $('tr#row-'+callback[i]).remove(); 

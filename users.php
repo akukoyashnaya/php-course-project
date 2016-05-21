@@ -12,8 +12,6 @@ include 'header.php'; //contains session_start()
     var user_id;
         
           $(".ajax").click (function() { 
-   //             if($(this).attr('checked'))
-   // {
            checked=$(this).is(':checked') ? 1 : 0;
            user_id=$(this).attr('value');
         console.log (checked);
@@ -21,11 +19,6 @@ include 'header.php'; //contains session_start()
         
       $.post("user_update.php", {status: checked, id:user_id });
     
-  //  }
-    // else
-    // {
-    //   //  $.get("store.php", { checked: 0, msgId: $(this).attr('value') } );
-    // }
           });
         
     });  

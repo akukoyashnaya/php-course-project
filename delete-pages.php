@@ -5,9 +5,7 @@ include 'db.php';
 if (isset($_POST['data']))
 {
   $delete_id = $_POST['data'];
-//pre ($delete_id);
   foreach ($delete_id as $id) {
-    //  query($sql='delete from `contacts` where `id`='.$id.'');
      query($sql='delete from `pages` where `id`='.$id.'');
 }
 echo json_encode($delete_id);

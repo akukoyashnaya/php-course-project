@@ -88,18 +88,10 @@ $pages = query($sql);
   <div id="sign_in">
        <?php if (is_login()): ?>
  <!-- show Sign In if user is not logged in       -->
-        <!--<a href="login.php">Sign In</a>-->
          <a href="logout.php">Logout</a>
         <?php else: ?>
        <a href="login.php">Sign In</a>
         <?php endif; ?>
-        
-        
-        
-         
-        
-        
-        
         
    </div>
   </div>

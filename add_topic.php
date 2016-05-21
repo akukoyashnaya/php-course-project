@@ -7,7 +7,6 @@ include 'header.php';
 if (!isset($_POST['new-topic'])) {
     
  $sql = 'select forum from `forums` where `id`='.$forum_id.'';
- //pre($sql);
  $forum = query($sql);
  $forum = $forum[0]['forum'];
  

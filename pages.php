@@ -10,13 +10,9 @@ $pages = query($sql);
        var page_id;
     /*CHANGE PAGE TITLE*/ 
        $(".order").focus(function() {
-        //   console.log('ccc');
-        //  $(this).data('val', $(this).val());
          page_id=$(this).attr('id');
          page_id = page_id.replace('input-','');
-        // prev = $(this).val();
          console.log(page_id);
-        // console.log(prev);
           $(this).next().show();
       });
       
@@ -31,17 +27,7 @@ $pages = query($sql);
        $(this).hide();   
       
         $.post("change_title.php", {data:data}); //function(callback){
-       
-    //     callback = $.parseJSON(callback);
-    //      var passive_id=callback.id;
-    //      var passive_img_order=callback.img_order;
-        
-    //     console.log(passive_id);
-    //     console.log(passive_img_order);
-        
-    //   $('#input-'+passive_id).val(passive_img_order); 
-      
-         // });
+
     });
       
       
@@ -69,9 +55,7 @@ $pages = query($sql);
      
       for (var i=0; i<length; i++){
         $('tr#row-'+callback[i]).remove(); 
-    //  $('#'+47).remove();
        console.log($('tr#'+callback[i]));
-     //    alert("Row"+data[i]+" is deleted");
      }
     });  
     
@@ -98,9 +82,7 @@ $pages = query($sql);
      
       for (var i=0; i<length; i++){
         $('tr#row-'+callback[i]).remove(); 
-    //  $('#'+47).remove();
        console.log($('tr#'+callback[i]));
-     //    alert("Row"+data[i]+" is deleted");
      }
     });  
     

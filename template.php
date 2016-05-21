@@ -21,7 +21,6 @@ if (isset($_GET['page'])){
      $page = $_GET['page'];
      $sql = 'SELECT * from `pages` WHERE `page`= '."'$page'".''; 
      $page = query($sql);
-//     echo pre($page);
       $title = $page[0]['title']; 
      $path = $page[0]['page'];
      $required = $page[0]['required'];

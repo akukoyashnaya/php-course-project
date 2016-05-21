@@ -14,8 +14,6 @@ include 'header.php';
         
             e.preventDefault();
              
-          // checked=$(this).is(':checked') ? 1 : 0;
-          // user_id=$(this).attr('value');
           name=$('#name').val();
           surname=$('#surname').val();
           phone=$('#phone').val();

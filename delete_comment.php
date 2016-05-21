@@ -23,7 +23,5 @@ $sql='SELECT `topic_id` from `comments` where `id`='.$delete_id.'';
  $callback = array ('delete_id' => $delete_id, 'topic_id' => $topic_id);
 
 echo json_encode($callback);
-
-//header ('Location: topic.php?t='.$topic_id.'');
   
  }

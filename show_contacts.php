@@ -3,11 +3,7 @@ include 'header.php'; //contains session_start()
 
    $sql="select * from `contacts` ";
    $contacts = query($sql);
-
- 
 ?>
-
-
 
 <script>
     $(document).ready(function(){
@@ -30,20 +26,12 @@ include 'header.php'; //contains session_start()
      
       for (var i=0; i<length; i++){
         $('tr#row-'+callback[i]).remove(); 
-    //  $('#'+47).remove();
        console.log($('tr#'+callback[i]));
-     //    alert("Row"+data[i]+" is deleted");
      }
     });  
-    
     });
     
-     
-   
     })
-    
-    
-    
     
 </script>
 
@@ -69,7 +57,6 @@ include 'header.php'; //contains session_start()
        <th>Email</th>
        <th>Message</th>
     </tr>
-   <!--<!--form method="post" action="#">-->
    <?php foreach ($contacts as $contact):?>
     <tr id="<?='row-'.$contact['id']?>">
      <td><?=$contact['id']?> </td>
@@ -84,7 +71,6 @@ include 'header.php'; //contains session_start()
     </tr>
   <?php  endforeach;?>
   </table>
-  <!--</form>-->
   </div>
   </div>
 

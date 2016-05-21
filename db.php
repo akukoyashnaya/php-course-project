@@ -4,7 +4,6 @@ function query($sql) {
     $pdo = new PDO('mysql:host=localhost; charset=utf8; dbname=c9', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
-    //pre($sql);
     if (stripos($sql,'insert')!== false)
     {
         $stmt = $pdo->query($sql);
@@ -14,7 +13,6 @@ function query($sql) {
 
 else {
         $stmt = $pdo->query($sql);
-        //echo("about to run fetchall after executing $sql<br />");
         $rt= $stmt->fetchAll();
         return $rt;
     } 

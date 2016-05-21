@@ -4,11 +4,8 @@ include 'header.php';
 //1. build and execute a query SELECT * from `forumes`
  $sql = sqlBuildSelect('forums'); 
  $forums = query($sql);
-// $sql1 = sqlBuildSelect('topics'); 
  $sql1='select count(*) as topic_counter from topics';
  $topics= query($sql1);
-
- // pre ($topics); 
 ?>
 <!--//2. show forums page-->
 <!doctype html>
@@ -31,7 +28,6 @@ include 'header.php';
             
 <?php
 $sql2=query('select *  from `topics`');
-//print_r ($sql2);
 // 2. show all forums as a table strings
   foreach ($forums as $forum) {
 //3. count all topics per forum

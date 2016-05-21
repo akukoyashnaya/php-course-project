@@ -31,8 +31,6 @@ include 'header.php';
 
 <?php 
 
- //$users = query(sqlBuildSelect('users')); 
-
 //1. check if form was submitted
 if ($_POST['login']) {
 //2.   if so, collect the data that user submitted in the form
@@ -40,11 +38,9 @@ if ($_POST['login']) {
         'login'=>$_POST['login'],
         'password'=>$_POST['password']
        ];
-    pre ($data);
 //3.   build and execute a query with the data that the user submitted (login,pw)
     $sql = sqlBuildSelect('users').sqlBuildWhere($data);
     $user = query($sql);
-    pre ($user); 
 //4.   if the result of the query contains a an active user from the db
     if(!empty($user)&&$user[0]['active'] == 1) {
 //5     mark the user session as being logged in
@@ -66,13 +62,8 @@ header('Location: index.php');
         $_SESSION['user']=null;
         $_SESSION['name']=null;
     }
- print_r($_SESSION);
 
-/* */
 }
-//8. if the user is not logged in
-//8.5  display a login form
-//9. if logged in
-//9.5  display a sign out button
+
 
 

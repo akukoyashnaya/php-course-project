@@ -1,8 +1,5 @@
 <?php
 include 'header.php';
-
-
- 
   
 ?>
  <script type="text/javascript" src="JS/nicEdit.js"></script>
