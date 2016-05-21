@@ -1,0 +1,547 @@
+* {
+    margin:0;
+    padding:0;
+    border: 0px;
+}
+
+html, body{
+    height:100%;
+}
+
+body {
+    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+    }
+
+.clear {
+    clear:both;
+}
+
+h2 {
+    margin: 10px 0 10px 0;
+}
+.submit-btn{
+    margin: 5px 0 10px;
+    padding: 8px 13px;
+    background-color: #CB2027;
+    color: white;
+    width: auto;
+    border-color: #CB2027;
+}
+
+.invisible {
+    display:none;
+}
+
+#header {
+    width:100%;
+    min-height:100px;
+    margin: 0 50px;
+}
+.logo {
+    width:117px;
+    width:50px;
+    float:left;
+}
+#navigation {
+  margin-top: 10px;
+    margin-left:117px;
+    float:left;
+}
+#navigation>ul{
+    list-style-type: none;
+}
+#navigation>ul>li{
+    float: left;
+    padding-right:50px;
+    padding: 10px 15px;
+    display:inline-block;
+}
+
+#navigation>ul>li>a{
+    text-decoration: none;
+      padding: 10px 15px;
+      color:#777;
+      font-size:14px;
+      position: relative;
+    display: block;
+}
+
+#navigation>ul>li.active{
+    
+  
+}
+
+#navigation>ul>li.active>a {
+   color: white;
+   padding: 10px 15px;
+    background-color: #CB2027;
+}
+
+#navigation>ul>li>a:hover {
+   
+   padding: 10px 15px;
+    background-color: #EEEEE0;
+}
+
+.admin-menu {
+    color:red!important;
+}
+
+.dropdown-menu{
+    list-style-type: none;border-radius: 0;
+    border: 0;
+    border-top: 2px solid #CB2027;
+    padding: 0;
+    background-color: #FCFCFC;
+    min-width: 200px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+    margin-top: 5px;
+    font-size: 14px;
+    z-index: 1000; 
+    /*non visible*/
+    display:none;
+    position:absolute;
+    
+}
+#navigation > ul > li > a:hover ul.dropdown-menu {
+    display: inline-block!important;
+}  
+
+.dropdown-menu>li>a{
+    display:block;
+    text-decoration: none;
+    color:#777!important;
+    padding: 10px 20px;
+    border-bottom: 1px dashed #DDDDDD;
+   
+    font-weight: 600;
+   
+   
+    font-size: 13px;
+}
+.dropdown-menu>li:last-child>a {
+    border-bottom: 0; 
+}
+.dropdown-menu>li>a:hover {
+    color:white!important;
+    background-color: #CB2027;
+}
+
+
+
+
+#sign_in{
+   margin-top: 15px;
+    float:right!important;
+    width:100px;
+    margin-right: 50px;
+   
+    
+}
+
+#sign_in>a{
+    color:#777;
+    line-height: 30px;
+ 
+}
+
+.container {
+    width:100%;
+}
+
+
+
+#login {
+    width:100%;
+    height:100%;
+    background-color: #f0f0f0;
+    padding-top: 50px;
+}
+
+.login-form {
+      padding: 20px 30px 10px;
+}
+.login-wrapper {
+    min-height:10px;
+    width:40%;
+    margin:0 auto;
+ 
+    background-color:white;
+    
+}
+
+.login-wrapper h4 {
+    text-align: center;
+    font-size:30px;
+    color: white;
+    background-color: #777;
+    font-weight: 400;
+    padding:10px;
+}
+
+
+
+
+
+.login-line{
+   
+    margin-bottom: 10px;
+}
+
+
+
+label {
+    font-size:13px;
+    color: #CB2027;
+    font-weight:700;
+    display:inline-block;
+    
+}
+
+.form-control {
+    line-height: 1.5em;
+    width:100%;
+   
+    border: 1px solid #777;
+    display:block; 
+   font-size:15px;
+padding:5px 5px;
+line-height:normal;
+    
+}
+.login-line>input[type=submit]{
+    margin: 5px 0 10px;
+    padding: 8px 13px;
+    font-size: 13px;
+    background-color: #CB2027;
+    color:white;
+}
+
+.form-control:focus { 
+    border-color:  #CB2027;
+    outline:none;
+}
+
+/*FORUM*/
+#forum {
+    margin: 0 50px 0 50px;
+}
+.forum-content, .topic-content {
+    width:100%;
+}
+th {
+    text-align:left;
+}
+
+ /*.topic-content{*/
+ /*   margin: 50px;*/
+/*}*/
+
+.forum-name {
+    text-decoration: none;
+    color: #CB2027;
+}
+
+.forum-name:hover {
+    text-decoration: none;
+    color:#333333;
+}
+
+/* TOPIC*/
+#topic {
+    margin: 0 50px 0 50px;
+}
+
+.topic_header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    
+}
+
+.topic_info{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.topic_info ul li
+{
+    float:left;
+    margin-right:15px;
+}
+
+.topic_info ul {
+    list-style: none;
+}
+
+.topic_info ul li i {
+    color: #CB2027;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.topic_content {
+    margin-top: 20px;
+}
+
+/*COMMENTS*/
+#comments {
+    width:75%;
+    margin-top: 20px;
+}
+
+.comment-number {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.comment-user i{
+  color: #666666;
+  font-size:20px;
+}
+
+.comment-text p {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.comment-user ul li
+{
+    float:left;
+    margin-right:15px;
+}
+
+.comment-user ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.comment-item {
+    border-top: 1px dashed #DDDDDD;
+}
+
+/*gallery*/
+.gallery-content{
+     margin-left: 50px;
+     margin-right:50px;
+}
+.gallery-item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.overlay-wrapper {
+	position:relative;
+}
+
+.overlay-wrapper .overlay {
+    bottom:0;
+    left:0;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    right:0;
+    top:0;
+    text-align:center;
+    padding-top:25%;
+    transition:all 0.4s ease;
+}
+
+.overlay-wrapper .overlay a {
+	font-size:20px;
+	/*width:50px;*/
+	/*height:50px;*/
+	color:#FFFFFF;
+	display:inline-block;
+	text-align:center;
+	padding-top:12px;
+/*	border-radius:50%;*/
+	margin-right:15px;
+	/*opacity:0.8;*/
+}
+
+.overlay-wrapper .overlay a:last-child {
+	margin-right:0;
+}
+
+.overlay-wrapper .overlay a:hover {
+	/*background-color:#333333;*/
+	color:#FFFFFF;
+}
+
+.overlay-wrapper:hover .overlay {
+	background-color:rgba(0,0,0,0.5);
+	opacity:1;
+}
+
+/*CONTACTS*/
+#contacts {
+    margin-left: 50px;
+    margin-right: 50px;
+    width:25%;
+}
+.contacts-header {
+    margin-bottom: 20px;
+}
+.contact-form-content input, textarea{
+    display: block;
+  
+    margin-bottom: 10px;
+    line-height: normal;
+    padding: 5px 5px;
+    width:100%;
+  }
+  
+   .form-contact{
+    border: 1px solid #777;
+    font-size: 15px;
+    color:#777;
+ }
+ 
+  .contact-form-content>input[type=submit] {
+    margin: 5px 0 10px;
+    padding: 8px 13px;
+    background-color: #CB2027;
+    color: white;
+    width:auto;
+    border-color:#CB2027;
+}
+ 
+ 
+ .form-contact:focus{
+    border: 1px solid #CB2027;
+    outline:none;
+ }
+ 
+ .success-message {
+     display:none;
+ }
+ 
+ /*ADMIN*/
+ #show-contacts {
+     margin-left: 50px;
+     margin-right: 50px;
+ }
+ 
+.contacts-page-header{
+    float: left;
+} 
+
+.contacts-actions {
+    float:right;
+}
+ .admin-table {
+     width:100%;
+    border-collapse: collapse;
+     }
+     
+.admin-table tr{
+    border-top: 1px solid #e7eaec;
+    padding-top: 5px;
+}
+
+.admin-table tr:first-child {
+    border: none;
+    
+}
+
+.admin-table tr>td {
+    
+    padding:10px;
+    line-height:1.5em;
+}
+    
+.contact-message {
+    width:35%;
+}
+
+.non-active {
+    display: none;
+}
+
+/*GALLERY, GALLERY-ADMIN*/
+ #gallery_admin {
+    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#gallery_admin input[type="submit"]{
+    padding:10px 20px;
+    cursor: pointer; cursor: hand;
+}
+.img-upload {
+    margin:10px 0 10px 0;
+    
+}
+.admin-gallery-table {
+     width:100%;
+    border-collapse: collapse;
+}
+.img_admin {
+    width: 100%;
+    height:auto;
+}
+
+.admin-gallery-table tr{
+    border-top: 1px solid #e7eaec;
+    padding-top: 5px;
+}
+
+.admin-gallery-table tr:first-child {
+    border: none;
+    
+}
+
+.admin-gallery-table tr>td {
+    
+    padding:10px;
+    line-height:1.5em;
+}
+
+.admin-gallery-table th {
+    margin-left: 0;
+}
+/*.autoresize {*/
+/*      max-width: 100%;*/
+/*    height: auto;*/
+/*    width: 100%;*/
+/*}*/
+
+.order{
+       line-height: 1.5em;
+    width: auto;
+    border: 1px solid #777;
+    display: block;
+    font-size: 15px;
+    padding: 5px 5px;
+    line-height: normal;
+}
+
+.order>input[type="text"]:focus{
+     border: 1px solid #CB2027;
+    outline:none;
+    color:black;
+}
+
+
+
+/*NEW TOPIC*/
+#new-topic {
+    width:50%;
+    margin: 0 50px 0 50px;
+}
+
+/*Common Settings*/
+#users, #pages, #new-page, #template, #index {
+   /* width:100%;*/
+    margin-left:50px;
+    margin-right:50px;
+}
+
+#users, #topic, #forum  {
+    width:50%;
+}
+#new-page{
+    width:75%;
+}
+
